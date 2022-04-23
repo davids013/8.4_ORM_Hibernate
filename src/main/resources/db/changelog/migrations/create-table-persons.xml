@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.4.xsd">
+    <changeSet id="001-create-table-persons" author="vshvedko">
+        <createTable tableName="persons">
+            <column name="name" type="varchar(64)"/>
+            <column name="surname" type="varchar(32)"/>
+            <column name="age" type="int">
+<!--                <constraints checkConstraint="CHECK (age &gt; 0 AND age &lt;= 100)"/>-->
+            </column>
+            <column name="city_of_living" type="varchar(32)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="phone_number" type="varchar(32)">
+                <constraints nullable="true" unique="true"/>
+            </column>
+        </createTable>
+        <addPrimaryKey tableName="persons" columnNames="name, surname, age" validate="true"/>
+        <sql>ALTER TABLE persons ADD CONSTRAINT chk_persons CHECK (age>=0 AND NOT age>100)</sql>
+    </changeSet>
+</databaseChangeLog>
