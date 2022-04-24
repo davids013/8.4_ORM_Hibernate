@@ -24,7 +24,7 @@ public class PersonController {
 
     @GetMapping("/by-city")
     public List<Persons> getPersonsByCity(@RequestParam String cityOfLiving) {
-        return service.getPersonsByCity(cityOfLiving);
+        return service.getPersonsByCity(cityOfLiving.toUpperCase(Locale.ROOT));
     }
 
     @GetMapping("/create")
