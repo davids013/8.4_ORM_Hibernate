@@ -46,3 +46,13 @@
 2. Допишите недостающие методы контроллера, в соответствии с появившимися новыми методами в репозитории.
 
 3. Написанные код выложите в тот же репозиторий, что и задача [DAO слой c Hibernate](https://github.com/netology-code/jd-homeworks/blob/master/hibernate/task1/README.md) на гитхабe, только создайте под нее другую ветку `jpa-repository` и прикрепите ссылку на нее в домашнем задании.
+
+
+# Задача @Query*
+
+## Описание
+Перепишем приложение из [первого задания](https://github.com/netology-code/jd-homeworks/blob/master/spring-jpa/task1/README.md) на запросы с помощью аннотации `@Query`.
+
+1. Вам необходимо переписать код из [первого задания](https://github.com/netology-code/jd-homeworks/blob/master/spring-jpa/task1/README.md), чтобы он теперь работал не через методы-запросы, а через запросы в аннотации `@Query` и язык `JPQL`.
+
+2. Написанные код выложите в тот же репозиторий, что и задача [DAO слой c Hibernate](https://github.com/netology-code/jd-homeworks/blob/master/hibernate/task1/README.md) на гитхабe, только создайте под нее другую ветку `jpa-repository-query` и прикрепите ссылку на нее в домашнем задании.
