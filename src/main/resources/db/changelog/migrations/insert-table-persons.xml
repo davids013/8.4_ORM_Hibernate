@@ -35,5 +35,26 @@
             <column name="age" value="52"/>
             <column name="city_of_living" value="VORONEZH"/>
         </insert>
+        <insert tableName="persons">
+            <column name="name" value="admin"/>
+            <column name="surname" value="iddqd"/>
+            <column name="age" value="52"/>
+            <column name="city_of_living" value="USER_CITY"/>
+            <column name="phone_number" value="ADMIN"/>
+        </insert>
+        <insert tableName="persons">
+            <column name="name" value="verified"/>
+            <column name="surname" value="0000"/>
+            <column name="age" value="52"/>
+            <column name="city_of_living" value="USER_CITY"/>
+            <column name="phone_number" value="VERIFIED"/>
+        </insert>
+        <insert tableName="persons">
+            <column name="name" value="user"/>
+            <column name="surname" value="0000"/>
+            <column name="age" value="52"/>
+            <column name="city_of_living" value="USER_CITY"/>
+            <column name="phone_number" value="USER"/>
+        </insert>
     </changeSet>
 </databaseChangeLog>
